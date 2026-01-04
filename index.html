@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trenchogotchi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Browser-based Trenchogotchi</p>
+      <h1>Raise a <span class="accent">Trenchy</span> with its own soul file</h1>
+      <p class="lede">Each companion is defined by a portable JSON "soul" that shapes its needs, personality, and voice. Swap souls, add your own, and keep your trenchy thriving.</p>
+      <div class="hero__actions">
+        <button id="randomSoul" class="button button--primary">Adopt a random soul</button>
+        <label class="button button--ghost">
+          Import soul file
+          <input id="soulUpload" type="file" accept="application/json">
+        </label>
+      </div>
+      <p class="microcopy">Tip: Souls live in <code>souls/*.json</code>. Drop a new file here to test your own character.</p>
+    </div>
+    <div class="hero__badge">
+      <p class="badge__title">Soul powered</p>
+      <p class="badge__value">AI-flavored traits + moods</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel panel--library">
+      <div class="panel__header">
+        <div>
+          <p class="eyebrow">Soul Library</p>
+          <h2>Choose a trenchy</h2>
+        </div>
+        <div class="tag">JSON souls</div>
+      </div>
+      <div id="soulList" class="soul-list" aria-live="polite"></div>
+    </aside>
+
+    <section class="panel panel--primary">
+      <div class="panel__header">
+        <div>
+          <p class="eyebrow">Current trenchy</p>
+          <h2 id="trenchyName">No trenchy selected</h2>
+          <p id="trenchyPronouns" class="muted"></p>
+        </div>
+        <div class="traits" id="traitTags"></div>
+      </div>
+
+      <div class="soul-intro">
+        <div class="soul-intro__text">
+          <p class="label">Soul essence</p>
+          <p id="trenchyLore" class="lore"></p>
+        </div>
+        <div class="soul-intro__meta">
+          <p class="label">Vibe</p>
+          <p id="trenchyVibe" class="vibe"></p>
+          <p class="label">Favorite</p>
+          <p id="trenchyFavorite" class="vibe"></p>
+        </div>
+      </div>
+
+      <div class="status-grid">
+        <div class="stat">
+          <div class="stat__label">
+            <span>Hunger</span>
+            <span id="hungerValue">--</span>
+          </div>
+          <div class="stat__bar">
+            <div id="hungerBar" class="stat__fill"></div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__label">
+            <span>Energy</span>
+            <span id="energyValue">--</span>
+          </div>
+          <div class="stat__bar">
+            <div id="energyBar" class="stat__fill"></div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__label">
+            <span>Mood</span>
+            <span id="moodValue">--</span>
+          </div>
+          <div class="stat__bar">
+            <div id="moodBar" class="stat__fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="button button--primary" data-action="feed">Feed</button>
+        <button class="button button--primary" data-action="play">Play</button>
+        <button class="button button--primary" data-action="rest">Rest</button>
+        <button class="button button--ghost" data-action="talk">Talk</button>
+      </div>
+
+      <div class="log">
+        <div class="log__header">
+          <div>
+            <p class="eyebrow">Soul channel</p>
+            <h3>Dialogue + events</h3>
+          </div>
+          <div class="badge">Live</div>
+        </div>
+        <div id="logEntries" class="log__entries" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Souls are portable JSON files. Share them, remix them, and see how they affect your trenchy's needs and voice.</p>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
