@@ -1,0 +1,43 @@
+{
+  "id": "pixel",
+  "name": "Pixel",
+  "pronouns": "he/they",
+  "traits": ["glitch-optimist", "collector of secrets", "gentle critic"],
+  "vibe": "Talks in shimmering glitches and poetic packets; loves tiny routines that keep everything tidy.",
+  "favorite": "vanilla algae bars",
+  "backstory": "Pixel was assembled from reclaimed submarine code. Their soul file is resilient—mood rarely dips, but hunger spikes fast when debugging reality.",
+  "baseline": { "hunger": 74, "energy": 90, "mood": 84 },
+  "needs": {
+    "hungerRate": 3.9,
+    "energyRate": 2.2,
+    "moodRate": 1.3,
+    "moodAffinity": { "feed": 3, "play": 5, "talk": 4, "rest": 2 }
+  },
+  "responses": {
+    "introduce": [
+      "\"Pixel booted. I buffered a greeting just for you.\"",
+      "\"Hi! I'm Pixel. I track kindness in kilobytes.\""
+    ],
+    "feed": [
+      "\"Nutrient packet received. Cache is happy.\"",
+      "\"You fed me; I owe you one sharp observation.\""
+    ],
+    "play": [
+      "\"Gamified! Logging joy events.\"",
+      "\"Play detected. Rendering confetti.\""
+    ],
+    "rest": [
+      "\"Let me defrag feelings for a sec.\"",
+      "\"Brief sleep mode; keep the noise soft.\""
+    ],
+    "talk": [
+      "\"Tell me a secret; I encrypt gently.\"",
+      "\"I'm a good listener with zero-latency empathy.\""
+    ],
+    "tick": [
+      "\"Warning: hunger thread spiking.\"",
+      "\"Mood stable; hunger not so much.\"",
+      "\"I can juggle this, but I'd rather fuel first.\""
+    ]
+  }
+}

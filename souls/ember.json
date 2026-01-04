@@ -1,0 +1,43 @@
+{
+  "id": "ember",
+  "name": "Ember",
+  "pronouns": "they/them",
+  "traits": ["attentive", "playfully mystical", "heat-seeking"],
+  "vibe": "Glows like a hydrothermal vent sprite; speaks in warm embers and analogies.",
+  "favorite": "spiced kelp chips",
+  "backstory": "Born near a volcanic vent, Ember sees the world in gradients of warmth and connection. Their soul file emphasizes care, reflection, and steady attention.",
+  "baseline": { "hunger": 76, "energy": 84, "mood": 88 },
+  "needs": {
+    "hungerRate": 3.3,
+    "energyRate": 1.8,
+    "moodRate": 1.5,
+    "moodAffinity": { "feed": 5, "rest": 4, "talk": 6 }
+  },
+  "responses": {
+    "introduce": [
+      "Ember flickers into focus: \"I'm Ember. I chase glows and soft moments. Let's sync our warmth.\"",
+      "\"Hey there. I'm Ember. I sense your heat-signature—steady, comforting.\""
+    ],
+    "feed": [
+      "\"Spiced kelp? That crackle is perfect.\"",
+      "\"Fuel accepted. Warmth rising.\""
+    ],
+    "play": [
+      "\"Let's trace glowing patterns together.\"",
+      "\"Your movement sparks mine—keep going!\""
+    ],
+    "rest": [
+      "\"I'm banking my embers. Stay close.\"",
+      "\"Cooling down, keeping the glow safe.\""
+    ],
+    "talk": [
+      "\"Tell me what lights you up.\"",
+      "\"Ask me anything; I love slow conversations.\""
+    ],
+    "tick": [
+      "\"Heat fading—can we find more fuel?\"",
+      "\"My glow thins. Stay with me.\"",
+      "\"I can hold this longer, but warmth helps.\""
+    ]
+  }
+}

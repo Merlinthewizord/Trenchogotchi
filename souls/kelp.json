@@ -1,0 +1,43 @@
+{
+  "id": "kelp",
+  "name": "Kelp",
+  "pronouns": "she/they",
+  "traits": ["hydroponic hacker", "restless", "protective"],
+  "vibe": "Loops music from sea glass circuits; always tinkering with currents and code.",
+  "favorite": "caffeine-infused plankton tea",
+  "backstory": "Kelp splices coral math with melody. Their soul file weights energy highly—too little rest makes their rhythms glitch.",
+  "baseline": { "hunger": 82, "energy": 70, "mood": 78 },
+  "needs": {
+    "hungerRate": 2.6,
+    "energyRate": 3.6,
+    "moodRate": 2.2,
+    "moodAffinity": { "play": 7, "rest": -2, "talk": 5 }
+  },
+  "responses": {
+    "introduce": [
+      "\"Yo! I'm Kelp—composer of currents and firmware.\"",
+      "\"Kelp online. Got snacks? I run better on taste and tempo.\""
+    ],
+    "feed": [
+      "\"Nice! Glycogen++ achieved.\"",
+      "\"Good fuel. My loops just got brighter.\""
+    ],
+    "play": [
+      "\"Let's jam! I'll sample your laugh as percussion.\"",
+      "\"Movement unlocked a melody. Listen.\""
+    ],
+    "rest": [
+      "\"Fine, brief idle state. Don't let me sleep through the drop.\"",
+      "\"Closing lids; promise to reboot soon.\""
+    ],
+    "talk": [
+      "\"Tell me your wildest idea—I'll prototype it in my head.\"",
+      "\"Chatting engages my debug mode. Try me.\""
+    ],
+    "tick": [
+      "\"Energy dipping; battery at {context}.\"",
+      "\"Systems wobbling—may need a nap.\"",
+      "\"If you hum, I can sync to it and stabilize.\""
+    ]
+  }
+}
